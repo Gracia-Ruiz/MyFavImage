@@ -30,4 +30,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 try {
     require('@popperjs/core');
     require('bootstrap');
+    require('@fortawesome/fontawesome-free');
 } catch (e) {}
+ require('./main.js');

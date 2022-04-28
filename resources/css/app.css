@@ -1,2 +1,10 @@
+/* bootstrap 5 */
 @import 'bootstrap/dist/css/bootstrap.min';
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&family=Patrick+Hand&display=swap');
+/* icons */
+@import '@fortawesome/fontawesome-free/css/all.min';
+/* my style */
+@import './myStyle.css';
+
 
