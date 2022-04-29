@@ -6,11 +6,11 @@
             <h1 class="fst-italic display-2 text-white mt-5 title-home"><i class="fa-solid fa-camera-retro fst-italic"></i> <span
                     class="text-accent">In</span>Shoot</h1>
             <h2 class="text-white fw-bold">Mis imágenes favoritas</h2>
-            <button class="btn-insert mt-5">
+            <a class="btn btn-insert mt-5" href="{{ route('image.create') }}">
                 <lord-icon src="https://cdn.lordicon.com/diyeocup.json" trigger="loop"
                     class="icon-btn">
                 </lord-icon> Nueva imagen
-            </button>
+            </a>
         </div>
     </div>
 </main>

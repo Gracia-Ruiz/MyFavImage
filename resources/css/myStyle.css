@@ -67,7 +67,7 @@ background-color: #235a4c;
 
 .bg-head{
     height: 70vh;
-    background:linear-gradient(var(--main-color) 2%,rgba(10, 10, 10, 0.597) , var(--main-color) 98%),url('/images/bg-head.jpg');
+    background:linear-gradient(var(--main-color) 2%,rgba(10, 10, 10, 0.597) , var(--main-color) 98%),url('/media/bg-head.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

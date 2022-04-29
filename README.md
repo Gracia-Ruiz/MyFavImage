@@ -18,4 +18,16 @@
 
 ## Home(primer paso), registro de usuarios y login.
 1. Para ello, usamos el motor de plantillas Blade. En lugar de por componentes para heredar código a múltiples vistas, usamos "Layouts Using Template Inheritance".
+2. Hacemos un commit para guardar toda esta parte, sobretodo por la parte de front-end.
 
+## Insertar imágenes.
+### Creamos toda la vuelta: model, view, controller. Pasamos también por el archivo web.php y lanzamos la migration para configurar y migrar al db y poder guardar las imágenes y el título. Adicionalmente, creamos una request ImageRequest para gestionar las reglas de validación.
+1. Empezamos creando el controller ImageController con el comando `php artisan make:controller ImageController` y también creamos un controlador para las rutas públicas. Las funciones las metemos en el controlador y el archivo web.php lo dejamos sólo para las rutas que gestionan la create y la store.
+2. Creamos el modelo. Usamos el Mass Assignment para salvar el título y la imagen.
+3. Las reglas de validación, las insertamos en la Request ImageRequest, creada mediante `php artisan make:Request ImageRequest`
+4. Creamos la migration a través de artisan, la modificamos y la migramos con `php artisan migrate`
+5. Creamos una vista para el formulario. Añadimos un formulario.
+6. Con el comando php artisan storage:link, creamos un "puente" entre las imágenes guardadas en la carpeta storage y public, y así son visibles desde el exterior.
+7. Realizamos un commit y guardamos todos estos cambios.
+
+## Visualizar imágenes y relación 1 a n entre user-files. Test de la relación.

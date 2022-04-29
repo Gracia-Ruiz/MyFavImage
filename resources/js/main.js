@@ -12,3 +12,4 @@ document.addEventListener('scroll', () =>{
       nav.classList.add('bg-nav');
     }
   })
+
