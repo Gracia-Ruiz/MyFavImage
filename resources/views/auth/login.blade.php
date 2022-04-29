@@ -2,7 +2,7 @@
 @section('content')
 <main class="container my-5 py-5">
     <div class="row">
-        <div class="col-12 col-md-6 offset-md-3 my-3 py-5 text-center rounded text-white bg-seccondary">
+        <div class="col-12 col-md-6 offset-md-3 my-5 py-5 text-center rounded text-white bg-seccondary">
           @if ($errors->any())
           <div class="bg-accent text-main fs-5">
               <ul>

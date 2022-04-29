@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<div class="container my-5 py-5">
+<main class="container my-5 py-5">
     <div class="row bg-seccondary text-white">
-        <div class="col-12 col-md-6 offset-md-3">
+        <div class="col-12 col-md-6 offset-md-3 my-5 py-5">
             <h1>Nueva imagen</h1>
         </div>
         <div class="col-12 col-md-6 mx-auto">
@@ -25,7 +25,6 @@
                 <button class="btn-insert mb-5" type="submit"> Enviar</button>
             </form>
         </div>
-
     </div>
-</div>
+</main>
 @endsection

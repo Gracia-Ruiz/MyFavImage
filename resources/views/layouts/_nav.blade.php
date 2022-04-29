@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark py-3 shadow sticky-top bd-accent bg-nav" id="nav"
+    <nav class="navbar navbar-expand-md navbar-dark py-3 shadow fixed-top bd-accent bg-nav" id="nav"
         aria-label="Fourth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand fst-italic fs-3 logo" href="{{ route('welcome') }}">
@@ -11,7 +11,8 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav mx-auto mb-2 mb-md-0 fs-4">
                     <li class="nav-item">
-                        <a class="text-decoration-none badge box-radius links" href="#">Mis imágenes</a>
+                        <a class="text-decoration-none badge box-radius links" href="{{ route('image.index') }}">Mis
+                            imágenes</a>
                     </li>
                     @auth
                     <li class="nav-item">
@@ -23,22 +24,24 @@
                     @endauth
                     @guest
                     <li class="nav-item">
-                        <a type="button" class="mx-1 fs-2" href="{{ route('login') }}">
-                            <i class="fas fa-user-check text-seccondary links"></i></a>
+                        <a type="button" class="mx-1 text-decoration-none badge links" href="{{ route('login') }}">
+                            Login <i class="fas fa-user-check text-seccondary links"></i></a>
                     </li>
-                    <li>
-                        <a type="button" class="mx-1 fs-2" href="{{ route('register') }}">
-                            <i class="fas fa-user-plus text-seccondary links"></i></a>
+                    <li class="nav-item">
+                        <a type="button" class="text-decoration-none badge box-radius links" href="{{ route('register') }}">
+                            Register <i class="fas fa-user-plus text-seccondary links"></i></a>
                     </li>
                     @endguest
                     @auth
+                    <li class="pt-1">{{ auth()->user()->name }}</li>
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
                         <button type="submit" class="border-0 bg-transparent mx-1 fs-4" href="#">
-                            <i class="fas fa-sign-out-alt text-seccondary links"></i></button>
+                            <i class="fas fa-sign-out-alt pt-2 text-seccondary links"></i></button>
                     </form>
                     @endauth
                 </ul>
             </div>
         </div>
     </nav>
+</header>

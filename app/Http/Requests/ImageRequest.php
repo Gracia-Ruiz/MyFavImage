@@ -25,7 +25,7 @@ class ImageRequest extends FormRequest
     {
         return [
             'title'=>'required|string|max:20',
-            'file'=>'required'
+            'file'=>'required|image'
         ];
     }
 }

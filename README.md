@@ -8,7 +8,7 @@
 - También vamos a usar composer para manejar las librerías php y npm para gestionar las  librerías css y js.
 - En este caso, además, hemos instalado previamente con composer el instalador de  laravel (laravel installer).
 - No es necesario, pero en este caso, vamos a usar webpack, así que debemos tener instalado node.js.
-
+- Usaremos el servidor web interno de php, que siempre abriremos con el comando `php artisan serve` que es el símil al comando `php -S localhost:8000`
 1. Iniciar proyecto en laravel con el comando `laravel new`
 2. Crear DBMS en mysql, configurar .env y migrar las migrations por defecto con el comando `php artisan migrate`
 3. Instalar y configurar librería de autentificación con el comando `composer require laravel/fortify` y el resto de pasos que se pueden encontrar en la documentación oficial de laravel. https://laravel.com/docs/9.x/fortify#main-content
@@ -30,4 +30,13 @@
 6. Con el comando php artisan storage:link, creamos un "puente" entre las imágenes guardadas en la carpeta storage y public, y así son visibles desde el exterior.
 7. Realizamos un commit y guardamos todos estos cambios.
 
-## Visualizar imágenes y relación 1 a n entre user-files. Test de la relación.
+## Visualizar imágenes y relación 1 a n entre user-files. Test del usuario logueado y registrado.
+1. Para visualizar las imágenes, creamos la parte front-end de todas las imágenes y pedimos al modelo que nos las devuelva. También pedimos que nos devuelva 8 imágenes en la home.
+2. Seguimos con el resto de la CRUD: primero hacemos la página de detalle, donde insertaremos dos enlaces para la eliminación y la edición.
+3. Hacemos el resto de rutas e implementamos las funciones relacionadas a la entidad en el controller.
+4. Hacemos también la vista de la edición.
+5. Realizamos un pequeño test sobre el login y register.
+6. Protegemos la crud usando el middleware Authenticate, que en este caso, ya tiene laravel configurado.
+7. Hacemos un pequeño test, aunque no de todo de momento.
+8. Implementamos un footer rápidamente para que quede "completo".
+

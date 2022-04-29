@@ -2,7 +2,7 @@
 @section('content')
 <main class="container my-5 py-5">
     <div class="row">
-        <div class="col-12 col-md-6 offset-md-3 my-3 py-5 rounded text-center text-white bg-seccondary">
+        <div class="col-12 col-md-6 offset-md-3 my-5 py-5 rounded text-center text-white bg-seccondary">
           @if ($errors->any())
           <div class="bg-accent text-main fs-5">
               <ul>
@@ -42,7 +42,7 @@
                       </span>
                   </div>
                   <div class="d-flex justify-content-center ">
-                    <button type="submit" class="btn box-radius btn-accent bd-accent">REGISTRARSE</button>
+                    <button type="submit" class="btn box-radius text-white btn-accent bd-accent">REGISTRARSE</button>
                   </div>
               </form>
               <div class="d-flex flex-column my-5 text-center">

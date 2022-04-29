@@ -15,6 +15,7 @@
     </div>
     @endif
     @yield('content')
+    @include('layouts._footer')
 
 <script src="{{mix('js/app.js')}}"></script>
 <script src="https://cdn.lordicon.com/lusqsztk.js"></script>

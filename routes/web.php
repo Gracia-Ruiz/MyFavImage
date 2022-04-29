@@ -16,5 +16,13 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'index'])->name('welcome');
+
+/* CRUD IMAGES */
 Route::get('/images/create', [ImageController::class, 'create'])->name('image.create');
 Route::post('/images/store', [ImageController::class, 'store'])->name('image.store');
+Route::get('/images/index', [ImageController::class, 'index'])->name('image.index');
+Route::get('images/{id}', [ImageController::class,'show'])->name('image.show');
+Route::get('images/{id}/edit', [ImageController::class,'edit'])->name('image.edit');
+Route::put('images/{id}', [ImageController::class,'update'])->name('image.update');
+Route::delete('images/{id}', [ImageController::class,'destroy'])->name('image.destroy');
+
